@@ -1,18 +1,18 @@
 #!/bin/bash
-dir="$(cd "$(dirname "$0")" && pwd)"
-cd $dir
 set -e
+
+dir=/var/logbox/logbox-hat-update/
 
 echo "Step 1 of 3: Downloading..."
 sleep 1
-script/download
+$dir/script/download
 
 echo "Step 2 of 3: Building..."
 sleep 1
-script/build
+$dir/script/build
 
 echo "Step 3 of 3: Flashing..."
 sleep 1
-script/flash
+$dir/script/flash
 
 echo "LogBox-HAT is now running the new software!"
