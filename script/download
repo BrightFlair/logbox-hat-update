@@ -1,0 +1,6 @@
+#!/bin/bash
+wget https://github.com/BrightFlair/logbox-hat/archive/master.zip
+unzip master.zip
+rm master.zip
+rm -rf logbox-hat/
+mv logbox-hat-master/ logbox-hat/
