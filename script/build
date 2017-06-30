@@ -1,0 +1,3 @@
+#!/bin/bash
+cd logbox-hat-update/
+make
