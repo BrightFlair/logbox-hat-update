@@ -1,6 +1,15 @@
 #!/bin/bash
 cd "$(dirname "$0")"
 set -e
+
+echo "Downloading..."
+sleep 1
 script/download
+
+echo "Building..."
+sleep 1
 script/build
+
+echo "Flashing..."
+sleep 1
 script/flash
