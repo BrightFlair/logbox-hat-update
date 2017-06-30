@@ -2,14 +2,16 @@
 cd "$(dirname "$0")"
 set -e
 
-echo "Downloading..."
+echo "Step 1 of 3: Downloading..."
 sleep 1
 script/download
 
-echo "Building..."
+echo "Step 2 of 3: Building..."
 sleep 1
 script/build
 
-echo "Flashing..."
+echo "Step 3 of 3: Flashing..."
 sleep 1
 script/flash
+
+echo "LogBox-HAT is now running the new software!"
