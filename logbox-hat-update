@@ -1,1 +1,6 @@
 #!/bin/bash
+cd "$(dirname "$0")"
+set -e
+script/download
+script/build
+script/flash
