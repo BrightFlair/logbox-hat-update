@@ -1,3 +1,5 @@
 #!/bin/bash
-cd ~/logbox-hat/
+pwd=$("pwd")
+cd /var/logbox/logbox-hat/
 make upload
+cd $pwd

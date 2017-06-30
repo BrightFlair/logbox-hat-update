@@ -1,7 +1,7 @@
 #!/bin/bash
 pwd=$("pwd")
-cd
-if [ ! -d ~/logbox-hat ]
+cd /var/logbox
+if [ ! -d logbox-hat ]
 then
 	git clone https://github.com/BrightFlair/logbox-hat.git
 fi
