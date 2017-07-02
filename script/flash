@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 pwd=$("pwd")
 cd /var/logbox/logbox-hat/
 make upload
