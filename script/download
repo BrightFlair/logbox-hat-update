@@ -1,5 +1,6 @@
 #!/bin/bash
 pwd=$("pwd")
+set -e
 cd /var/logbox
 if [ ! -d logbox-hat ]
 then
