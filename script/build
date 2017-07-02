@@ -1,6 +1,6 @@
 #!/bin/bash
 pwd=$("pwd")
 set -e
-cd /var/logbox/logbox-hat/
+cd /home/pi/logbox-hat/
 make
 cd $pwd
