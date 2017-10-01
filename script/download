@@ -2,7 +2,7 @@
 pwd=$("pwd")
 set -e
 cd /home/logbox
-if [ ! -d logbox-hat ]
+if [ ! -d hat ]
 then
 	git clone https://github.com/BrightFlair/logbox-hat.git hat
 fi
