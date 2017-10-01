@@ -1,12 +1,12 @@
 #!/bin/bash
 pwd=$("pwd")
 set -e
-cd /home/pi
+cd /home/logbox
 if [ ! -d logbox-hat ]
 then
-	git clone https://github.com/BrightFlair/logbox-hat.git
+	git clone https://github.com/BrightFlair/logbox-hat.git hat
 fi
 
-cd logbox-hat
+cd hat
 git pull
 cd $pwd
